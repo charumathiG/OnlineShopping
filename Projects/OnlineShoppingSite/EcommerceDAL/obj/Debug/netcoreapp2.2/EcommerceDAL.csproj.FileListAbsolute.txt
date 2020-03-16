@@ -1,0 +1,7 @@
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceDAL\bin\Debug\netcoreapp2.2\EcommerceDAL.deps.json
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceDAL\bin\Debug\netcoreapp2.2\EcommerceDAL.dll
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceDAL\bin\Debug\netcoreapp2.2\EcommerceDAL.pdb
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp2.2\EcommerceDAL.AssemblyInfoInputs.cache
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp2.2\EcommerceDAL.AssemblyInfo.cs
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp2.2\EcommerceDAL.dll
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp2.2\EcommerceDAL.pdb

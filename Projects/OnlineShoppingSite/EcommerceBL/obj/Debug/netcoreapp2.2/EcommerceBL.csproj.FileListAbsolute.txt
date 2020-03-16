@@ -1,0 +1,11 @@
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp2.2\EcommerceBL.csprojAssemblyReference.cache
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp2.2\EcommerceBL.AssemblyInfoInputs.cache
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp2.2\EcommerceBL.AssemblyInfo.cs
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp2.2\EcommerceBL.deps.json
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp2.2\EcommerceBL.dll
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp2.2\EcommerceBL.pdb
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp2.2\EcommerceDAL.dll
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp2.2\EcommerceDAL.pdb
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp2.2\EcommerceBL.csproj.CopyComplete
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp2.2\EcommerceBL.dll
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp2.2\EcommerceBL.pdb

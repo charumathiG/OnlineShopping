@@ -1,0 +1,6 @@
+﻿CREATE PROCEDURE [dbo].[SP_Products]
+AS
+BEGIN
+SELECT * FROM Products
+END
+

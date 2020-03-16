@@ -1,0 +1,10 @@
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\bin\Debug\netcoreapp3.1\ClassLibrary1.deps.json
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\bin\Debug\netcoreapp3.1\ClassLibrary1.dll
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\bin\Debug\netcoreapp3.1\EcommerceDAL.dll
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\bin\Debug\netcoreapp3.1\EcommerceModel.dll
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\bin\Debug\netcoreapp3.1\EcommerceDAL.pdb
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\bin\Debug\netcoreapp3.1\EcommerceModel.pdb
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.csprojAssemblyReference.cache
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.AssemblyInfoInputs.cache
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.AssemblyInfo.cs
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\ClassLibrary1\obj\Debug\netcoreapp3.1\ClassLibrary1.csproj.CopyComplete

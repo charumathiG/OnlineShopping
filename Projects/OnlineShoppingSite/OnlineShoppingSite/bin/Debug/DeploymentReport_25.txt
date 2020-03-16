@@ -1,0 +1,24 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[SP_AddToCart] (Procedure)
+       [dbo].[SP_CancelOrder] (Procedure)
+       [dbo].[SP_CustomerRegistration] (Procedure)
+       [dbo].[SP_ErrorHandling] (Procedure)
+       [dbo].[SP_ErrorSelectAll] (Procedure)
+       [dbo].[SP_Orders] (Procedure)
+       [dbo].[SP_Payment] (Procedure)
+       [dbo].[SP_PaymentType] (Procedure)
+       [dbo].[SP_Products] (Procedure)
+       [dbo].[SP_UserLogin] (Procedure)
+
+** Supporting actions

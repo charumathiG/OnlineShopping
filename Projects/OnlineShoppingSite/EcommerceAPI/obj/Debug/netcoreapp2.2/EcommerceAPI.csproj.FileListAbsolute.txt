@@ -1,0 +1,3 @@
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceAPI\obj\Debug\netcoreapp2.2\EcommerceAPI.csprojAssemblyReference.cache
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceAPI\obj\Debug\netcoreapp2.2\EcommerceAPI.AssemblyInfoInputs.cache
+C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceAPI\obj\Debug\netcoreapp2.2\EcommerceAPI.AssemblyInfo.cs
