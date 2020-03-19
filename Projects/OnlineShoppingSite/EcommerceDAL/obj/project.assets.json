@@ -539,11 +539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\charumathi.gunasekar\\source\\repos\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj",
+      "projectUniqueName": "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj",
       "projectName": "EcommerceDAL",
-      "projectPath": "C:\\Users\\charumathi.gunasekar\\source\\repos\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj",
+      "projectPath": "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj",
       "packagesPath": "C:\\Users\\charumathi.gunasekar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\charumathi.gunasekar\\source\\repos\\OnlineShoppingSite\\EcommerceDAL\\obj\\",
+      "outputPath": "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceDAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

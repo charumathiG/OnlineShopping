@@ -10,13 +10,15 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 :r ..\Shopping\Script.CustomerRegistration.sql
+:r ..\Shopping\Script.Category.sql
 :r ..\Shopping\Script.Products.sql
 :r ..\Shopping\Script.Payment.sql
+:r ..\Shopping\Script.PaymentMode.sql
 :r ..\Shopping\Script.Orders.sql
 :r ..\Shopping\Script.AddToCart.sql
 :r ..\Shopping\Script.ErrorHandling.sql
-:r ..\Shopping\Script.OrderItem.sql
-:r ..\Shopping\Script.OrderStatus.sql
+:r ..\Shopping\Script.Shipping.sql
+:r ..\Shopping\Script.OrderDetail.sql
 
 
 
