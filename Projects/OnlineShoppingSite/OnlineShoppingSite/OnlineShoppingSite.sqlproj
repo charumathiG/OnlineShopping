@@ -68,8 +68,10 @@
     <None Include="Shopping\Script.AddToCart.sql" />
     <None Include="Shopping\Script.Products.sql" />
     <None Include="Shopping\Script.ErrorHandling.sql" />
-    <None Include="Shopping\Script.OrderItem.sql" />
-    <None Include="Shopping\Script.OrderStatus.sql" />
+    <None Include="Shopping\Script.OrderDetail.sql" />
+    <None Include="Shopping\Script.PaymentMode.sql" />
+    <None Include="Shopping\Script.Category.sql" />
+    <None Include="Shopping\Script.Shipping.sql" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="StoreProcedure\CustomerRegistration.sql" />
@@ -82,7 +84,5 @@
     <Build Include="StoreProcedure\ErrorHandling.sql" />
     <Build Include="StoreProcedure\ErrorSelectAll.sql" />
     <Build Include="StoreProcedure\SearchProduct.sql" />
-    <Build Include="StoreProcedure\PlaceOrder.sql" />
-    <Build Include="StoreProcedure\YourOrder.sql" />
   </ItemGroup>
 </Project>

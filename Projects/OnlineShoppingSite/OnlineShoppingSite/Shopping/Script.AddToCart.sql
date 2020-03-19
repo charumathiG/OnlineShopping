@@ -10,8 +10,10 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 create table AddToCart(
-	CartId INT IDENTITY(1,1),
+	Id INT IDENTITY(1,1),
 	CustomerId INT NOT NULL FOREIGN KEY REFERENCES Customers(CustomerId),
-	ProductId VARCHAR(5) FOREIGN KEY REFERENCES Products(ProductId),
+	ProductId VARCHAR(5) FOREIGN KEY REFERENCES Product(ProductId),
+    Price NUMERIC(7,2),
+    Quantity INT,
 	Date[date]
 	)

@@ -557,11 +557,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\charumathi.gunasekar\\source\\repos\\OnlineShoppingSite\\EcommerceBL\\EcommerceBL.csproj",
+      "projectUniqueName": "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceBL\\EcommerceBL.csproj",
       "projectName": "EcommerceBL",
-      "projectPath": "C:\\Users\\charumathi.gunasekar\\source\\repos\\OnlineShoppingSite\\EcommerceBL\\EcommerceBL.csproj",
+      "projectPath": "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceBL\\EcommerceBL.csproj",
       "packagesPath": "C:\\Users\\charumathi.gunasekar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\charumathi.gunasekar\\source\\repos\\OnlineShoppingSite\\EcommerceBL\\obj\\",
+      "outputPath": "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceBL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -580,8 +580,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\charumathi.gunasekar\\source\\repos\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj": {
-              "projectPath": "C:\\Users\\charumathi.gunasekar\\source\\repos\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj"
+            "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj": {
+              "projectPath": "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj"
             }
           }
         }

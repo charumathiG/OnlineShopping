@@ -11,10 +11,12 @@ Post-Deployment Script Template
 */
 create table Payment(
         
-    Id INT IDENTITY(100,1),
-    ProductId VARCHAR(5) FOREIGN KEY REFERENCES Products(ProductId),
+    PaymentId INT IDENTITY(100,1) PRIMARY KEY,
+    ProductId VARCHAR(5) FOREIGN KEY REFERENCES Product(ProductId),
     CustomerId INT NOT NULL  FOREIGN KEY REFERENCES Customers(CustomerId),
-	PurchasePrice NUMERIC(7,2),
+    Quantity INT,
+    Price NUMERIC(7,2),
+    TotalPrice NUMERIC(7,2),
     PaymentMode VARCHAR(20)NOT NULL,
 	Date[date]
 )

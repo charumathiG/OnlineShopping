@@ -3,7 +3,7 @@
 )
 AS
 BEGIN
-SELECT * FROM  Products WHERE ProductName
+SELECT * FROM  Product WHERE ProductName
 LIKE '%'+@ProductName+'%' OR
 Category LIKE '%' +@ProductName+'%' OR ProductType LIKE '%'+@ProductName+'%'
 ORDER BY Price ASC
