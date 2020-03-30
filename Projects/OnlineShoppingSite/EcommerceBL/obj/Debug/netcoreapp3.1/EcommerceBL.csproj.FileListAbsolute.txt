@@ -9,3 +9,14 @@ C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\De
 C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.csproj.CopyComplete
 C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.dll
 C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp3.1\EcommerceBL.deps.json
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp3.1\EcommerceBL.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp3.1\EcommerceBL.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp3.1\EcommerceDAL.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp3.1\EcommerceDAL.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.csprojAssemblyReference.cache
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.AssemblyInfoInputs.cache
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.AssemblyInfo.cs
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.csproj.CopyComplete
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.pdb

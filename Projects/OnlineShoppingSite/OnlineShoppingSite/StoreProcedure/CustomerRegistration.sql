@@ -1,7 +1,7 @@
-﻿
-CREATE PROCEDURE [dbo].[SP_CustomerRegistration]
+﻿CREATE PROCEDURE [dbo].[SP_CustomerRegistration]
 (
-    @CustomerName VARCHAR(50),
+    @FirstName VARCHAR(50),
+    @LastName VARCHAR(50),
 	@CustomerPhone VARCHAR(11),
 	@CustomerPassword VARCHAR(100),
 	@CustomerEmail VARCHAR(100),
@@ -11,7 +11,8 @@ CREATE PROCEDURE [dbo].[SP_CustomerRegistration]
 	BEGIN
 	INSERT INTO Customers VALUES
 	(
-	@CustomerName,
+	@FirstName,
+	@LastName,
 	@CustomerPhone,
 	@CustomerPassword,
 	@CustomerEmail,

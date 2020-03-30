@@ -59,6 +59,9 @@
     <Folder Include="Publish" />
     <Folder Include="Shopping" />
     <Folder Include="StoreProcedure" />
+    <Folder Include="StoreProcedure\AddToCart" />
+    <Folder Include="StoreProcedure\Products" />
+    <Folder Include="StoreProcedure\YourOrder" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Publish\Script.PostDeployment1.sql" />
@@ -75,14 +78,26 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="StoreProcedure\CustomerRegistration.sql" />
-    <Build Include="StoreProcedure\Payment.sql" />
-    <Build Include="StoreProcedure\AddToCart.sql" />
-    <Build Include="StoreProcedure\Orders.sql" />
-    <Build Include="StoreProcedure\Products.sql" />
     <Build Include="StoreProcedure\UserLogin.sql" />
     <Build Include="StoreProcedure\CancelOrder.sql" />
     <Build Include="StoreProcedure\ErrorHandling.sql" />
     <Build Include="StoreProcedure\ErrorSelectAll.sql" />
-    <Build Include="StoreProcedure\SearchProduct.sql" />
+    <Build Include="StoreProcedure\AddToCart\DeleteCart.sql" />
+    <Build Include="StoreProcedure\AddToCart\GetCart.sql" />
+    <Build Include="StoreProcedure\AddToCart\GetCartById.sql" />
+    <Build Include="StoreProcedure\AddToCart\InsertCart.sql" />
+    <Build Include="StoreProcedure\AddToCart\UpdateCartById.sql" />
+    <Build Include="StoreProcedure\Products\InsertProduct.sql" />
+    <Build Include="StoreProcedure\Products\GetProducts.sql" />
+    <Build Include="StoreProcedure\Products\GetProductById.sql" />
+    <Build Include="StoreProcedure\Products\UpdateProductById.sql" />
+    <Build Include="StoreProcedure\Products\DeleteProduct.sql" />
+    <Build Include="StoreProcedure\Products\SearchProductByKeyword.sql" />
+    <Build Include="StoreProcedure\Category.sql" />
+    <Build Include="StoreProcedure\YourOrder\InsertOrder.sql" />
+    <Build Include="StoreProcedure\YourOrder\DeleteOrder.sql" />
+    <Build Include="StoreProcedure\YourOrder\UpdateOrderById.sql" />
+    <Build Include="StoreProcedure\YourOrder\GetOrder.sql" />
+    <Build Include="StoreProcedure\YourOrder\GetOrderById.sql" />
   </ItemGroup>
 </Project>

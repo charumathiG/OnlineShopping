@@ -10,7 +10,7 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 CREATE TABLE Shipping(
-ShippingId INT IDENTITY(1,1),
+ShippingId INT IDENTITY(1,1) primary key,
 OrderId INT NOT NULL FOREIGN KEY REFERENCES Orders(OrderId),
 ShippingAddress VARCHAR(50),
 ContactNumber VARCHAR(12)

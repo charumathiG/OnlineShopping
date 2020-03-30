@@ -12,7 +12,7 @@ namespace EcommerceDAL.RepositoryPattern
             public SqlConnection connection;
 
             private readonly IConfiguration configuration;
-            public string ConnectionString { get; }
+            public string ConnectionString { get; set; }
 
             public BaseDAL()
             {
@@ -81,7 +81,7 @@ namespace EcommerceDAL.RepositoryPattern
                         command.CommandType = commandType;
                         if (parameters != null)
                         {
-                            foreach (var parameter in parameters)
+                            foreach (var parameter in parameters)   
                             {
                                 command.Parameters.Add(parameter);
                             }

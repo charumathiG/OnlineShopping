@@ -1,0 +1,8 @@
+﻿CREATE PROCEDURE [dbo].[SP_GetOrder]
+
+AS
+BEGIN
+
+SELECT * FROM Orders 
+
+END

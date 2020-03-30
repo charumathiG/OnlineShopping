@@ -17,7 +17,8 @@ namespace EcommerceDAL.CustomerRegistrationDAL
         public int InsertUser(RegistrationModel user)
         {
             var parameters = new List<SqlParameter>();
-            parameters.Add(basedal.CreateParameter("@CustomerName", 50, user.CustomerName, DbType.String));
+            parameters.Add(basedal.CreateParameter("@FirstName", 50, user.FirstName, DbType.String));
+            parameters.Add(basedal.CreateParameter("@LastName", 50, user.LastName, DbType.String));
             parameters.Add(basedal.CreateParameter("@CustomerPhone", 11, user.CustomerPhone, DbType.String));
             parameters.Add(basedal.CreateParameter("@CustomerPassword", 100, user.CustomerPassword, DbType.String));
             parameters.Add(basedal.CreateParameter("@CustomerEmail", 100, user.CustomerEmail, DbType.String));

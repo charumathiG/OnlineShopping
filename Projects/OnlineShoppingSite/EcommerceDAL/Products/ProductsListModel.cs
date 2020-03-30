@@ -4,15 +4,17 @@ using System.Text;
 
 namespace EcommerceDAL.ProductsDAL
 {
-     public class ProductsListModel
-     {
-        public string Product_Id { get; set; }
-        public string Product_Name { get; set; }
-        public string Category { get; set; }
-        public string Product_Type { get; set; }
-        public string Description1 { get; set; }
+    public class ProductsListModel
+    {
+        public string ProductId { get; set; }
+        public string ProductName { get; set; }
+        public string CategoryId { get; set; }
+        public string Descriptions { get; set; }
         public int Price { get; set; }
         public int Quantity { get; set; }
-        public string Images { get; set; }
-     }
+        public string Image { get; set; }
+    }
 }
+
+        
+   

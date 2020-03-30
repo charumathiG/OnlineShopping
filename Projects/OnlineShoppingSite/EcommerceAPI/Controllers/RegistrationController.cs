@@ -20,11 +20,6 @@ namespace EcommerceAPI.Controllers
         {
             bl = BL;
         }
-        [HttpGet]
-        public int Index()
-        {
-            return 1;
-        }
 
         [HttpPost]
         [Route("api/Registration")]
@@ -32,5 +27,6 @@ namespace EcommerceAPI.Controllers
         {
             return bl.Insertion(user);
         }
+       
     }
 }

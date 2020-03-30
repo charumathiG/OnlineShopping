@@ -14,3 +14,7 @@ C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineSho
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\bin\Debug\OnlineShoppingSite.dacpac
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\bin\Debug\OnlineShoppingSite.dll
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\bin\Debug\OnlineShoppingSite.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\Model.xml
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\refactor.xml
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\postdeploy.sql
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\predeploy.sql
