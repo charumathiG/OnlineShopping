@@ -9,6 +9,7 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+
 :r ..\Shopping\Script.CustomerRegistration.sql
 :r ..\Shopping\Script.Category.sql
 :r ..\Shopping\Script.Products.sql

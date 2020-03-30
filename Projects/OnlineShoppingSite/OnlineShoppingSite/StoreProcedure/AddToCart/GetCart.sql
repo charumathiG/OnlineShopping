@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [dbo].[SP_GetCart]
+AS
+BEGIN
+
+SELECT * FROM AddToCart
+
+END

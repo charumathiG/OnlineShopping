@@ -17,6 +17,12 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Swagger;
+using EcommerceDAL.ProductsDAL;
+using EcommerceBL.Products;
+using EcommerceBL.YourOrder;
+using EcommerceDAL.YourOrder;
+using EcommerceDAL.AddToCart;
+using EcommerceBL.AddToCart;
 
 
 namespace EcommerceAPI
@@ -29,6 +35,8 @@ namespace EcommerceAPI
         }
 
         public IConfiguration Configuration { get; }
+        public static string ConnectionString { get; set; }
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -37,7 +45,14 @@ namespace EcommerceAPI
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddTransient<IRegistrationDAL, RegistrationDAL>();
             services.AddTransient<IRegistrationBL, RegistrationBL>();
+            services.AddTransient<IProductsListDAL, ProductsListDAL>();
+            services.AddTransient<IProductListBL, ProductListBL>();
+            services.AddTransient<IAddCartBL, AddCartBL>();
+            services.AddTransient<IAddCartDAL, AddCartDAL>();
+            services.AddTransient<IYourOrderDAL, YourOrderDAL>();
+            services.AddTransient<IYourOrderBL, YourOrderBL>();
             services.AddTransient<IBaseDAL, BaseDAL>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
@@ -75,11 +90,22 @@ namespace EcommerceAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                //endpoints.MapControllerRoute(
-                //    name: "default",
-                //    pattern: "{controller=Registration}/{action=Insertion}/{id?}");
-                //endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Registration}/{action=Insertion}/{id?}");
+                endpoints.MapRazorPages();
             });
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                //TODO: Enable production exception handling (https://docs.microsoft.com/en-us/aspnet/core/fundamentals/error-handling)
+                app.UseExceptionHandler("/Error");
+
+                app.UseHsts();
+            }
 
         }
     }

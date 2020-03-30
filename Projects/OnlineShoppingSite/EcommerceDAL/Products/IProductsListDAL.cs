@@ -7,6 +7,12 @@ namespace EcommerceDAL.ProductsDAL
 {
      public interface IProductsListDAL
      {
-        int GetProducts(ProductsListModel productList);
+        List<ProductsListModel> GetProducts();
+
+        int InsertProducts(ProductsListModel productList);
+
+        bool UpdateProduct(ProductsListModel update);
+
+        bool DeleteProduct(ProductsListModel delete);
      }
 }

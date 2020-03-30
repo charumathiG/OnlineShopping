@@ -20,3 +20,4 @@ create table Product(
   Images IMAGE
 )
 
+

@@ -9,7 +9,8 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-CREATE TABLE Category(
+create table Category(
 CategoryId INT IDENTITY(1,1) PRIMARY KEY,
-Descriptions VARCHAR(600)NOT NULL
+CategoryName varchar(100) not null,
+Descriptions varchar(600)not null
 )

@@ -15,5 +15,5 @@ create table AddToCart(
 	ProductId VARCHAR(5) FOREIGN KEY REFERENCES Product(ProductId),
     Price NUMERIC(7,2),
     Quantity INT,
-	Date[date]
-	)
+	[Date] Date
+)
