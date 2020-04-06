@@ -1,24 +1,42 @@
-﻿using System;
-using System.Data;
-using System.Data.SqlClient;
-using EcommerceDAL.RepositoryPattern;
-using EcommerceBL.CustomerRegistrationBL;
-using EcommerceBL;
-using EcommerceDAL.CustomerRegistrationDAL;
-using EcommerceDAL;
+﻿// <copyright file="RegistrationBL.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace EcommerceBL
 {
-    public class RegistrationBL: IRegistrationBL
+    using System;
+    using System.Data;
+    using System.Data.SqlClient;
+    using EcommerceBL;
+    using EcommerceBL.CustomerRegistrationBL;
+    using EcommerceDAL;
+    using EcommerceDAL.CustomerRegistrationDAL;
+    using EcommerceDAL.RepositoryPattern;
+
+    /// <summary>
+    /// Implementation of Class.
+    /// </summary>
+    public class RegistrationBL : IRegistrationBL
     {
-        IRegistrationDAL dal;
-        public RegistrationBL(IRegistrationDAL Dal)
+        private IRegistrationDAL dal;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RegistrationBL"/> class.
+        /// </summary>
+        /// <param name="daL">dal.</param>
+        public RegistrationBL(IRegistrationDAL daL)
         {
-            dal = Dal;
+            this.dal = daL;
         }
+
+        /// <summary>
+        /// Implementation ofMethod.
+        /// </summary>
+        /// <param name="user">user.</param>
+        /// <returns>value.</returns>
         public int Insertion(RegistrationModel user)
         {
-            return dal.InsertUser(user);
+            return this.dal.InsertUser(user);
         }
     }
 }

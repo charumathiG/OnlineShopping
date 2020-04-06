@@ -12,7 +12,9 @@ Post-Deployment Script Template
 create table OrderDetail(
     OrderId INT NOT NULL FOREIGN KEY REFERENCES Orders(OrderId),
     PaymentId INT NOT NULL FOREIGN KEY REFERENCES Payment(PaymentId),
+    ShippingId INT NOT NULL FOREIGN KEY REFERENCES Shipping(ShippingId),
     CustomerId INT NOT NULL CONSTRAINT fk_customerId FOREIGN KEY REFERENCES Customers(CustomerId),
+    Price NUMERIC(7,2),
     TotalPrice NUMERIC(7,2),
     Quantity INT
     )

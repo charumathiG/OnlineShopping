@@ -16,5 +16,6 @@ Values(@ProductId, @CustomerId,@DATE,@DATETIME2,@Status)
 END
 
 
---exec SP_InsertOrder 'P0001','100','place order'
+exec SP_InsertOrder 'P0002','100','0'
+select * from Orders
 

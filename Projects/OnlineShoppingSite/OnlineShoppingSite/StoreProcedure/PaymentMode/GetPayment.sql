@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [dbo].[SP_GetPayment]
+AS
+BEGIN
+
+SELECT * FROM PaymentMode
+
+END

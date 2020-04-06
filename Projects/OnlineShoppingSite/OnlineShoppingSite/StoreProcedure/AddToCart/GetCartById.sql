@@ -1,12 +1,13 @@
 ﻿CREATE PROCEDURE [dbo].[SP_GetCartById]
 (
-@Id INT
+@CartId INT
 )
 AS
 BEGIN
 
 SELECT * FROM AddToCart 
-WHERE Id=@Id
+WHERE 
+CartId=@CartId
 
 END
 

@@ -1,0 +1,46 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[DeleteOrder] (Procedure)
+       [dbo].[FetchUser] (Procedure)
+       [dbo].[SP_CancelOrder] (Procedure)
+       [dbo].[SP_CustomerRegistration] (Procedure)
+       [dbo].[SP_DeleteCart] (Procedure)
+       [dbo].[SP_DeleteProduct] (Procedure)
+       [dbo].[SP_ErrorHandling] (Procedure)
+       [dbo].[SP_ErrorSelectAll] (Procedure)
+       [dbo].[SP_GetCart] (Procedure)
+       [dbo].[SP_GetCartById] (Procedure)
+       [dbo].[SP_GetCategory] (Procedure)
+       [dbo].[SP_GetDetail] (Procedure)
+       [dbo].[SP_GetOrder] (Procedure)
+       [dbo].[SP_GetOrderById] (Procedure)
+       [dbo].[SP_GetPayment] (Procedure)
+       [dbo].[SP_GetPaymentDetail] (Procedure)
+       [dbo].[SP_GetProductById] (Procedure)
+       [dbo].[SP_GetProducts] (Procedure)
+       [dbo].[SP_GetYourOrderDetails] (Procedure)
+       [dbo].[SP_InsertAddress] (Procedure)
+       [dbo].[SP_InsertCart] (Procedure)
+       [dbo].[SP_InsertCategory] (Procedure)
+       [dbo].[SP_InsertOrder] (Procedure)
+       [dbo].[SP_InsertPayment] (Procedure)
+       [dbo].[SP_InsertProduct] (Procedure)
+       [dbo].[SP_SearchProductByKeyword] (Procedure)
+       [dbo].[SP_UpdateCartById] (Procedure)
+       [dbo].[SP_UpdateDetail] (Procedure)
+       [dbo].[SP_UpdateOrderById] (Procedure)
+       [dbo].[SP_UpdatePayment] (Procedure)
+       [dbo].[SP_UpdateProductById] (Procedure)
+       [dbo].[SP_UserLogin] (Procedure)
+
+** Supporting actions

@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [dbo].[SP_GetCategory]
+AS
+BEGIN
+
+SELECT * FROM Category
+
+END

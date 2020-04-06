@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [dbo].[SP_GetDetail]
+AS
+BEGIN
+
+SELECT * FROM Shipping
+
+END

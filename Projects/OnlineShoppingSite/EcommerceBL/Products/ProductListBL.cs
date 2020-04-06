@@ -1,41 +1,80 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EcommerceDAL.ProductsDAL;
-using EcommerceDAL;
-using System.Data;
-using System.Data.SqlClient;
-using EcommerceDAL.RepositoryPattern;
-
+﻿// <copyright file="ProductListBL.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 namespace EcommerceBL.Products
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Data.SqlClient;
+    using System.Text;
+    using EcommerceDAL;
+    using EcommerceDAL.ProductsDAL;
+    using EcommerceDAL.RepositoryPattern;
+
+    /// <summary>
+    /// Implementation of Class.
+    /// </summary>
     public class ProductListBL : IProductListBL
     {
-        Random random = new Random();
-        IProductsListDAL dal;
-        public ProductListBL(IProductsListDAL Dal)
+        private IProductsListDAL dal;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProductListBL"/> class.
+        /// </summary>
+        /// <param name="daL">dal.</param>
+        public ProductListBL(IProductsListDAL daL)
         {
-            dal = Dal;
+            this.dal = daL;
         }
 
+        /// <summary>
+        /// Implemetntationof Method.
+        /// </summary>
+        /// <param name="deleteList">list.</param>
+        /// <returns>value.</returns>
         public bool DeleteProducts(ProductsListModel deleteList)
         {
-            return dal.DeleteProduct(deleteList);
+            return this.dal.DeleteProduct(deleteList);
         }
 
-        public List<ProductsListModel> GetProductsList()
-        {
-            return dal.GetProducts();
-        }
+        ///// <summary>
+        ///// Implementation of Method.
+        ///// </summary>
+        ///// <returns>value.</returns>
+        // public List<ProductsListModel> GetProductsList()
+        // {
+        //    return this.dal.GetProducts();
+        // }
 
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <param name="view">view.</param>
+        /// <returns>value.</returns>
         public int InsertProducts(ProductsListModel view)
         {
-            return dal.InsertProducts(view);
+            return this.dal.InsertProducts(view);
         }
 
-        public bool UpdateProductList(ProductsListModel UpdateList)
+        /// <summary>
+        /// Implementation of method.
+        /// </summary>
+        /// <param name="keyword">key.</param>
+        /// <returns>value.</returns>
+        public List<ProductsListModel> Searching( string keyword)
         {
-            return dal.UpdateProduct(UpdateList);
+            return this.dal.SearchProduct(keyword);
+        }
+
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <param name="updateList">list.</param>
+        /// <returns>value.</returns>
+        public bool UpdateProductList(ProductsListModel updateList)
+        {
+            return this.dal.UpdateProduct(updateList);
         }
     }
 }

@@ -62,6 +62,13 @@
     <Folder Include="StoreProcedure\AddToCart" />
     <Folder Include="StoreProcedure\Products" />
     <Folder Include="StoreProcedure\YourOrder" />
+    <Folder Include="StoreProcedure\Category" />
+    <Folder Include="StoreProcedure\YourOrderDetails" />
+    <Folder Include="StoreProcedure\ShippingDetails" />
+    <Folder Include="StoreProcedure\PaymentDetail" />
+    <Folder Include="StoreProcedure\PaymentMode" />
+    <Folder Include="StoreProcedure\UserLogin" />
+    <Folder Include="StoreProcedure\UserRegistration" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Publish\Script.PostDeployment1.sql" />
@@ -77,8 +84,6 @@
     <None Include="Shopping\Script.Shipping.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="StoreProcedure\CustomerRegistration.sql" />
-    <Build Include="StoreProcedure\UserLogin.sql" />
     <Build Include="StoreProcedure\CancelOrder.sql" />
     <Build Include="StoreProcedure\ErrorHandling.sql" />
     <Build Include="StoreProcedure\ErrorSelectAll.sql" />
@@ -93,11 +98,25 @@
     <Build Include="StoreProcedure\Products\UpdateProductById.sql" />
     <Build Include="StoreProcedure\Products\DeleteProduct.sql" />
     <Build Include="StoreProcedure\Products\SearchProductByKeyword.sql" />
-    <Build Include="StoreProcedure\Category.sql" />
     <Build Include="StoreProcedure\YourOrder\InsertOrder.sql" />
     <Build Include="StoreProcedure\YourOrder\DeleteOrder.sql" />
     <Build Include="StoreProcedure\YourOrder\UpdateOrderById.sql" />
     <Build Include="StoreProcedure\YourOrder\GetOrder.sql" />
     <Build Include="StoreProcedure\YourOrder\GetOrderById.sql" />
+    <Build Include="StoreProcedure\Category\GetCategory.sql" />
+    <Build Include="StoreProcedure\Category\InsertCategory.sql" />
+    <Build Include="StoreProcedure\YourOrderDetails\GetYourOrderDetails.sql" />
+    <Build Include="StoreProcedure\ShippingDetails\InsertAddress.sql" />
+    <Build Include="StoreProcedure\ShippingDetails\GetDetail.sql" />
+    <Build Include="StoreProcedure\ShippingDetails\UpdateDetail.sql" />
+    <Build Include="StoreProcedure\PaymentDetail\GetPaymentDetail.sql" />
+    <Build Include="StoreProcedure\PaymentMode\InsertPayment.sql" />
+    <Build Include="StoreProcedure\PaymentMode\GetPayment.sql" />
+    <Build Include="StoreProcedure\PaymentMode\UpdatePayment.sql" />
+    <Build Include="StoreProcedure\UserLogin\FetchUser.sql" />
+    <Build Include="StoreProcedure\UserLogin\UserLogin.sql" />
+    <Build Include="StoreProcedure\UserRegistration\CustomerRegistration.sql" />
+    <Build Include="StoreProcedure\PlaceOrder.sql" />
+    <Build Include="StoreProcedure\Cart.sql" />
   </ItemGroup>
 </Project>

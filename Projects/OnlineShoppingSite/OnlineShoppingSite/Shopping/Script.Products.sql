@@ -9,15 +9,19 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-create table Product(
+create table Products(
   Id INT IDENTITY PRIMARY KEY,
   ProductId AS 'P'+RIGHT('0000'+CAST(Id AS VARCHAR(10)),4) PERSISTED UNIQUE,
   ProductName VARCHAR(100)NOT NULL,
   CategoryId INT NOT NULL  FOREIGN KEY REFERENCES Category(CategoryId),
-  Descriptions VARCHAR(600)NOT NULL,
+  Description VARCHAR(600)NOT NULL,
   Price NUMERIC(7,2)NOT NULL,
   Quantity INT,
-  Images IMAGE
+  Image VARCHAR(50)
 )
+
+
+
+
 
 

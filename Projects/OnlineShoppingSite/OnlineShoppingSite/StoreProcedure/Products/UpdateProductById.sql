@@ -12,7 +12,7 @@ AS
 BEGIN
 DECLARE @result int
 
-UPDATE Product
+UPDATE Products
 SET 
     ProductName=@ProductName,
     CategoryId=@CategoryId,

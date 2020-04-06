@@ -5,7 +5,7 @@
 AS
 BEGIN
 
-SELECT * FROM Product 
+SELECT * FROM Products 
 WHERE ProductId=@ProductId
 
 END
