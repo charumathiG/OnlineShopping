@@ -8,12 +8,12 @@ C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\OnlineShoppingSite
 C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\postdeploy.sql
 C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\predeploy.sql
 C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\OnlineShoppingSite.sqlprojAssemblyReference.cache
-C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\OnlineShoppingSite.sqlprojAssemblyReference.cache
-C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\OnlineShoppingSite.dll
-C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\OnlineShoppingSite.pdb
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\bin\Debug\OnlineShoppingSite.dacpac
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\bin\Debug\OnlineShoppingSite.dll
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\bin\Debug\OnlineShoppingSite.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\OnlineShoppingSite.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\OnlineShoppingSite.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\OnlineShoppingSite.sqlprojAssemblyReference.cache
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\Model.xml
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\refactor.xml
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\obj\Debug\postdeploy.sql

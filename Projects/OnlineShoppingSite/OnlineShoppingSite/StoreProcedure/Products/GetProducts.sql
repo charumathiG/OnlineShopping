@@ -3,7 +3,7 @@
 AS
 BEGIN
 
-SELECT * FROM Product 
+SELECT * FROM Products 
 
 END
-	Exec SP_GetProducts
+	--Exec SP_GetProducts

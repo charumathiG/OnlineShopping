@@ -2,17 +2,25 @@
 (
 @ProductName varchar(100),
 @CategoryId Int,
-@Descriptions  VARCHAR(600),
+@Description  VARCHAR(600),
 @Price  NUMERIC(7,2),
 @Quantity INT,
-@Images IMAGE
+@Image VARCHAR(50)
 
 )
 AS
 BEGIN
 
-INSERT INTO Product(ProductName,CategoryId,Descriptions,Price,Quantity,Images) 
-Values(@ProductName, @CategoryId,@Descriptions,@Price,@Quantity,@Images)
+INSERT INTO Products
+(
+ProductName,
+CategoryId,
+Description,
+Price,
+Quantity,
+Image
+) 
+Values(@ProductName, @CategoryId,@Description,@Price,@Quantity,@Image)
 
 SELECT CAST(SCOPE_IDENTITY() AS INT)
 

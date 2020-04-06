@@ -1,14 +1,23 @@
-using EcommerceDAL;
-using EcommerceDAL.ProductsDAL;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+// <copyright file="CustomerTest.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 namespace ECommerce.Test
 {
-    [TestClass]
-    public class CustomerTest
-    {
-        public RegistrationModel registration;
-       
+     using EcommerceDAL;
+     using EcommerceDAL.ProductsDAL;
+     using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+        /// <summary>
+        /// Test class for CustomerName.
+        /// </summary>
+     [TestClass]
+     public class CustomerTest
+     {
+        private RegistrationModel registration;
+
+        /// <summary>
+        /// Test method for FullNameTestValid.
+        /// </summary>
         [TestMethod]
         public void FullNameTestValid()
         {
@@ -16,18 +25,20 @@ namespace ECommerce.Test
             RegistrationModel customer = new RegistrationModel()
             {
                 FirstName = "teena",
-                LastName="mintu"
-
+                LastName = "mintu",
             };
-            string Expected = "mintu, teena";
+            string expected = "mintu, teena";
 
             // -- Act
             string actual = customer.FullName;
 
             // -- Assert
-            Assert.AreEqual(Expected, actual);
+            Assert.AreEqual(expected, actual);
         }
 
+        /// <summary>
+        /// Test method for ValidateValid.
+        /// </summary>
         [TestMethod]
         public void ValidateValid()
         {
@@ -35,20 +46,15 @@ namespace ECommerce.Test
             RegistrationModel customer = new RegistrationModel
             {
                 LastName = "teena",
-                CustomerEmail = "teena@gmail.com"
+                EmailId = "teena@gmail.com",
             };
-            bool Expected = true;
+            bool expected = true;
 
             // -- Act
             bool actual = customer.Validate();
 
             // -- Assert
-            Assert.AreEqual(Expected, actual);
-
-
+            Assert.AreEqual(expected, actual);
         }
     }
-
-        
-    
 }

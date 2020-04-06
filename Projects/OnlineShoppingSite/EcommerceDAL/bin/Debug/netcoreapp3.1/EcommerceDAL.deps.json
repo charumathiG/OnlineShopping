@@ -9,6 +9,7 @@
       "EcommerceDAL/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration": "3.1.2",
+          "StyleCop.Analyzers": "1.1.118",
           "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
@@ -86,6 +87,7 @@
           }
         }
       },
+      "StyleCop.Analyzers/1.1.118": {},
       "System.Data.SqlClient/4.8.1": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -190,6 +192,13 @@
       "sha512": "sha512-9jpe330V0aT9EXG5FqnMptSrz4Rar9rOaIt4n8gDrEVXkucAABW6sNFRWRA7bXuXpyfqeVw3kFwVj6On/TpJvw==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "StyleCop.Analyzers/1.1.118": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Onx6ovGSqXSK07n/0eM3ZusiNdB6cIlJdabQhWGgJp3Vooy9AaLS/tigeybOJAobqbtggTamoWndz72JscZBvw==",
+      "path": "stylecop.analyzers/1.1.118",
+      "hashPath": "stylecop.analyzers.1.1.118.nupkg.sha512"
     },
     "System.Data.SqlClient/4.8.1": {
       "type": "package",

@@ -10,6 +10,6 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 CREATE TABLE PaymentMode(
-    PaymentId INT NOT NULL  FOREIGN KEY REFERENCES Payment(PaymentId),
-    ModeOfPayment VARCHAR(50)
+    PaymentModeId INT Primary key,
+    ModeOfPayment VARCHAR(50) NOT NULL
     )

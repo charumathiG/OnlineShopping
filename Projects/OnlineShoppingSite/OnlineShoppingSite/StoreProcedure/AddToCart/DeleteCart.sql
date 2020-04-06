@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[SP_DeleteCart]
 (
-@Id int
+@CartId int
 )
 
 AS
@@ -10,7 +10,7 @@ DECLARE @result int
 
 DELETE AddToCart 
 WHERE 
-Id=@Id
+CartId=@CartId
 
 IF @@ERROR=0
 SET @result=1

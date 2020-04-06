@@ -8,7 +8,7 @@ BEGIN
 
 DECLARE @result int
 
-DELETE Product 
+DELETE Products 
 WHERE 
 ProductId=@ProductId
 

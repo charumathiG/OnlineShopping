@@ -1,39 +1,68 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EcommerceDAL.RepositoryPattern;
-using EcommerceDAL.YourOrder;
-
+﻿// <copyright file="YourOrderBL.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace EcommerceBL.YourOrder
 {
-    public class YourOrderBL:IYourOrderBL
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using EcommerceDAL.RepositoryPattern;
+    using EcommerceDAL.YourOrder;
+
+    /// <summary>
+    /// Implementation of Interface.
+    /// </summary>
+    public class YourOrderBL : IYourOrderBL
     {
-        Random random = new Random();
-        IYourOrderBL dal;
-        public YourOrderBL(IYourOrderBL Dal)
+        private IYourOrderBL dal;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="YourOrderBL"/> class.
+        /// </summary>
+        /// <param name="daL">dal.</param>
+        public YourOrderBL(IYourOrderBL daL)
         {
-            dal = Dal;
+            this.dal = daL;
         }
 
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <param name="deleteList">list.</param>
+        /// <returns>value.</returns>
         public bool DeleteOrderList(YourOrderModel deleteList)
         {
-            return dal.DeleteOrderList(deleteList);
+            return this.dal.DeleteOrderList(deleteList);
         }
 
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <returns>value.</returns>
         public List<YourOrderModel> GetOrderList()
         {
-            return dal.GetOrderList();
+            return this.dal.GetOrderList();
         }
 
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <param name="view">view.</param>
+        /// <returns>value.</returns>
         public int InsertOrderList(YourOrderModel view)
         {
-            return dal.InsertOrderList(view);
+            return this.dal.InsertOrderList(view);
         }
 
-        public bool UpdateOrderList(YourOrderModel UpdateList)
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <param name="updateList">list.</param>
+        /// <returns>value.</returns>
+        public bool UpdateOrderList(YourOrderModel updateList)
         {
-            return dal.UpdateOrderList(UpdateList);
+            return this.dal.UpdateOrderList(updateList);
         }
     }
 }

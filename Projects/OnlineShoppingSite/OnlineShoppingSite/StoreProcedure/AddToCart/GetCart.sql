@@ -5,3 +5,5 @@ BEGIN
 SELECT * FROM AddToCart
 
 END
+
+exec SP_GetCart

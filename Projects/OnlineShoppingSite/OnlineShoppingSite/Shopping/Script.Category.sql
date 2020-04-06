@@ -10,7 +10,7 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 create table Category(
-CategoryId INT IDENTITY(1,1) PRIMARY KEY,
-CategoryName varchar(100) not null,
-Descriptions varchar(600)not null
+CategoryId INT IDENTITY(1,1) PRIMARY KEY ,
+CategoryName VARCHAR(100) NOT NULL,
+Description VARCHAR(600)NOT NULL
 )

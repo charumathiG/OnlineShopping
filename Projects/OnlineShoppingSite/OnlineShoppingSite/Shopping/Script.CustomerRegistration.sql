@@ -9,12 +9,17 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
+
+
 create table Customers(
   CustomerId INT IDENTITY(100,1) PRIMARY KEY ,
   FirstName VARCHAR(50) NOT NULL,
-  LastName VARCHAR(50) NOT NULL,
-  CustomerPhone VARCHAR(12)NOT NULL,
-  CustomerPassword VARCHAR(16)NOT NULL,
-  CustomerEmail VARCHAR(50)NOT NULL,
-  CustomerAddress VARCHAR(100) NOT NULL
+  LastName VARCHAR (50) NOT NULL,
+  FullName VARCHAR(100) NOT NULL,
+  PhoneNumber VARCHAR(12)NOT NULL,
+  EmailId VARCHAR(50)NOT NULL,
+  Password VARCHAR(16)NOT NULL,
+  Address VARCHAR(100) NOT NULL
   )
+
+ 

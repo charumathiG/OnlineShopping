@@ -1,6 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[SP_UpdateCartById]
 (
-	@Id INT,
+	@CartId INT,
 	@CustomerId INT ,
 	@ProductId VARCHAR(5),
     @Price NUMERIC(7,2),
@@ -19,7 +19,7 @@ SET
     Quantity=@Quantity 
    
 WHERE
-Id=@Id
+CartId=@CartId
 
 IF @@ERROR=0
 SET @result=1

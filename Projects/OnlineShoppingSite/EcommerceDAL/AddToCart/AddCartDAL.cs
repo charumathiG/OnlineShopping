@@ -1,41 +1,61 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using EcommerceDAL.RepositoryPattern;
-using EcommerceDAL.AddToCart;
-using System.Data;
-using System.Data.SqlClient;
-
+﻿// <copyright file="AddCartDAL.cs" company="PlaceholderCompany">
+// Copyright (c) PlaceholderCompany. All rights reserved.
+// </copyright>
 
 namespace EcommerceDAL.AddToCart
 {
-     public class AddCartDAL:IAddCartDAL
+    using System;
+    using System.Collections.Generic;
+    using System.Data;
+    using System.Data.SqlClient;
+    using System.Text;
+    using EcommerceDAL.AddToCart;
+    using EcommerceDAL.RepositoryPattern;
+
+    /// <summary>
+    /// Implementation of a Class.
+    /// </summary>
+    public class AddCartDAL : IAddCartDAL
      {
-        public IBaseDAL basedal;
+        private IBaseDAL basedal;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AddCartDAL"/> class.
+        /// </summary>
+        /// <param name="baseDAL">value.</param>
         public AddCartDAL(IBaseDAL baseDAL)
         {
-            basedal = baseDAL;
+            this.basedal = baseDAL;
         }
 
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <param name="delete">delete.</param>
+        /// <returns>value.</returns>
         public bool DeleteCart(AddCartModel delete)
         {
             var parameter = new List<SqlParameter>();
-            parameter.Add(basedal.CreateParameter("@Id", 5, delete.Id, DbType.Int16));
-            basedal.Update("SP_DeleteCart", CommandType.StoredProcedure, parameter.ToArray(), out bool Id);
-            return Id;
+            parameter.Add(this.basedal.CreateParameter("@CartId", 5, delete.CartId, DbType.Int16));
+            this.basedal.Update("SP_DeleteCart", CommandType.StoredProcedure, parameter.ToArray(), out bool id);
+            return id;
         }
 
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <returns>value.</returns>
         public List<AddCartModel> GetCart()
         {
             var parameter = new List<SqlParameter>();
             List<AddCartModel> list = new List<AddCartModel>();
             AddCartModel cart = null;
-            var List = basedal.GetData("SP_GetCart", CommandType.StoredProcedure);
-            foreach (DataRow data in List.Tables[0].Rows)
+            var cartlist = this.basedal.GetData("SP_GetCart", CommandType.StoredProcedure);
+            foreach (DataRow data in cartlist.Tables[0].Rows)
             {
                 cart = new AddCartModel();
-                cart.Id = Convert.ToInt32(data[0]);
-                cart.CustomerId =Convert.ToInt32( data[1]);
+                cart.CartId = Convert.ToInt32(data[0]);
+                cart.CustomerId = Convert.ToInt32(data[1]);
                 cart.ProductId = data[2].ToString();
                 cart.Price = Convert.ToInt32(data[3]);
                 cart.Quantity = Convert.ToInt32(data[4]);
@@ -43,29 +63,40 @@ namespace EcommerceDAL.AddToCart
 
                 list.Add(cart);
             }
+
             return list;
         }
 
-        public int InsertCart(AddCartModel List)
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <param name="list">list.</param>
+        /// <returns>value.</returns>
+        public int InsertCart(AddCartModel list)
         {
             var parameter = new List<SqlParameter>();
-            parameter.Add(basedal.CreateParameter("@Id", 5, List.Id, DbType.Int16));
-            parameter.Add(basedal.CreateParameter("@CustomerId", 5, List.CustomerId, DbType.Int16));
-            parameter.Add(basedal.CreateParameter("@ProductId", 5, List.ProductId, DbType.String));
-            parameter.Add(basedal.CreateParameter("@Price", 9, List.Price, DbType.VarNumeric));
-            parameter.Add(basedal.CreateParameter("@Quantity",500, List.Quantity, DbType.Int16));
-            parameter.Add(basedal.CreateParameter("@Date", 50, List.Date, DbType.Int16));
+            parameter.Add(this.basedal.CreateParameter("@CartId", 5, list.CartId, DbType.Int16));
+            parameter.Add(this.basedal.CreateParameter("@CustomerId", 5, list.CustomerId, DbType.Int16));
+            parameter.Add(this.basedal.CreateParameter("@ProductId", 5, list.ProductId, DbType.String));
+            parameter.Add(this.basedal.CreateParameter("@Price", 9, list.Price, DbType.VarNumeric));
+            parameter.Add(this.basedal.CreateParameter("@Quantity", 500, list.Quantity, DbType.Int16));
+            parameter.Add(this.basedal.CreateParameter("@Date", 50, list.Date, DbType.Int16));
 
-            basedal.Insert("SP_InsertCart", CommandType.StoredProcedure, parameter.ToArray(), out int lastId);
+            this.basedal.Insert("SP_InsertCart", CommandType.StoredProcedure, parameter.ToArray(), out int lastId);
 
             return lastId;
         }
 
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <param name="update">update.</param>
+        /// <returns>value.</returns>
         public bool UpdateCart(AddCartModel update)
         {
             var parameter = new List<SqlParameter>();
-            parameter.Add(basedal.CreateParameter("@ProductId", 5, update.ProductId, DbType.Int16));
-            basedal.Update("SP_UpdateCart", CommandType.StoredProcedure, parameter.ToArray(), out bool status);
+            parameter.Add(this.basedal.CreateParameter("@ProductId", 5, update.ProductId, DbType.Int16));
+            this.basedal.Update("SP_UpdateCart", CommandType.StoredProcedure, parameter.ToArray(), out bool status);
             return status;
         }
      }
