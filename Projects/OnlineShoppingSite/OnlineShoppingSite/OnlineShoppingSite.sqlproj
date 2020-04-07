@@ -118,5 +118,12 @@
     <Build Include="StoreProcedure\UserRegistration\CustomerRegistration.sql" />
     <Build Include="StoreProcedure\PlaceOrder.sql" />
     <Build Include="StoreProcedure\Cart.sql" />
+    <Build Include="StoreProcedure\TotalPrice.sql" />
+    <Build Include="StoreProcedure\GetProductById.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OnlineShoppingSite.dbmdl" />
+    <None Include="OnlineShoppingSite.jfm" />
+    <None Include="OnlineShoppingSite.sqlproj.user" />
   </ItemGroup>
 </Project>
