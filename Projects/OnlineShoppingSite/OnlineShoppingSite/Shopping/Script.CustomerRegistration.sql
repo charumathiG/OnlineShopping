@@ -19,7 +19,9 @@ create table Customers(
   PhoneNumber VARCHAR(12)NOT NULL,
   EmailId VARCHAR(50)NOT NULL,
   Password VARCHAR(16)NOT NULL,
-  Address VARCHAR(100) NOT NULL
+  Address VARCHAR(100) NOT NULL,
+  LastLoggedInTime DATETIME,
+  TokenNo NVARCHAR(225)
   )
 
  

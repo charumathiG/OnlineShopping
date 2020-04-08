@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[Cart]
+﻿CREATE PROCEDURE [dbo].[SP_Cart]
 	(
 	@ProductId varchar(5),
 	@CustomerId varchar(100),

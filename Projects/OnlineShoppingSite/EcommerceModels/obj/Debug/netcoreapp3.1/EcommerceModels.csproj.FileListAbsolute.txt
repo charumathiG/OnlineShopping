@@ -1,0 +1,8 @@
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceModels\bin\Debug\netcoreapp3.1\EcommerceModels.deps.json
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceModels\bin\Debug\netcoreapp3.1\EcommerceModels.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceModels\bin\Debug\netcoreapp3.1\EcommerceModels.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceModels\obj\Debug\netcoreapp3.1\EcommerceModels.csprojAssemblyReference.cache
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceModels\obj\Debug\netcoreapp3.1\EcommerceModels.AssemblyInfoInputs.cache
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceModels\obj\Debug\netcoreapp3.1\EcommerceModels.AssemblyInfo.cs
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceModels\obj\Debug\netcoreapp3.1\EcommerceModels.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceModels\obj\Debug\netcoreapp3.1\EcommerceModels.pdb

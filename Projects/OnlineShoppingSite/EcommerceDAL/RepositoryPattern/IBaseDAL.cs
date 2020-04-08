@@ -52,7 +52,7 @@ namespace EcommerceDAL.RepositoryPattern
         /// <param name="commandtype">commandtype.</param>
         /// <param name="parameters">parameters.</param>
         /// <returns>value.</returns>
-        DataSet GetData(string commandtext, CommandType commandtype, SqlParameter[] parameters = null);
+        DataSet GetData(string commandtext, CommandType commandtype, List<SqlParameter> parameters = null);
 
         /// <summary>
         /// Implementattion of Method.

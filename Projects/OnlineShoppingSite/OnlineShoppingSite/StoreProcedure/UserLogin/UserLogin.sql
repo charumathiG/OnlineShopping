@@ -1,12 +1,9 @@
-﻿CREATE PROCEDURE [dbo].[SP_UserLogin]
+﻿CREATE PROCEDURE [dbo].[SP_GetUser]
 (
-@EmailId VARCHAR(50),
-@Password VARCHAR(16)
+@EmailId VARCHAR(50)
 )
 AS
 BEGIN
-SELECT * FROM Customers WHERE EmailId = @EmailId
-AND 
-Password =@Password
+SELECT * FROM Customers WHERE EmailId=@EmailId
 END
 

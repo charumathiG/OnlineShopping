@@ -4,20 +4,30 @@
     @LastName VARCHAR(50),
 	@FullName VARCHAR(100),
 	@PhoneNumber VARCHAR(12),
-	@Password VARCHAR(100),
 	@EmailId VARCHAR(100),
+	@Password VARCHAR(100),
 	@Address VARCHAR(100)
 )
 	AS
 	BEGIN
-	INSERT INTO Customers VALUES
+	INSERT INTO Customers
+	(
+	FirstName,
+	LastName,
+	FullName,
+	PhoneNumber,
+	EmailId,
+	Password,
+	Address
+	) 
+	VALUES
 	(
 	@FirstName,
 	@LastName,
 	@FullName,
 	@PhoneNumber,
-	@Password,
 	@EmailId,
+	@Password,
 	@Address
 )  
 END

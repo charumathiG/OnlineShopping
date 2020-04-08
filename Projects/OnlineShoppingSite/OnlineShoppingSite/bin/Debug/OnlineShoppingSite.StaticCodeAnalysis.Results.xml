@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Problems>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrderDetails\GetYourOrderDetails.sql</SourceFile>
+    <Line>5</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetYourOrderDetails) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrderDetails\GetYourOrderDetails.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_InsertCategory) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Category\InsertCategory.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Category\GetCategory.sql</SourceFile>
+    <Line>5</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetCategory) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Category\GetCategory.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\GetOrderById.sql</SourceFile>
+    <Line>8</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetOrderById) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\GetOrderById.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\GetOrder.sql</SourceFile>
+    <Line>6</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetOrder) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\GetOrder.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from DateTime to Date.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\UpdateOrderById.sql</SourceFile>
+    <Line>9</Line>
+    <Column>20</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from Integer to DateTime.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\UpdateOrderById.sql</SourceFile>
+    <Line>10</Line>
+    <Column>35</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from DateTime to Date.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\UpdateOrderById.sql</SourceFile>
+    <Line>10</Line>
+    <Column>25</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_UpdateOrderById) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\UpdateOrderById.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\InsertOrder.sql</SourceFile>
+    <Line>20</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from DateTime to Date.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\InsertOrder.sql</SourceFile>
+    <Line>9</Line>
+    <Column>20</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from Integer to DateTime.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\InsertOrder.sql</SourceFile>
+    <Line>10</Line>
+    <Column>35</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from DateTime to Date.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\InsertOrder.sql</SourceFile>
+    <Line>10</Line>
+    <Column>25</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from ASCII String(3) to Int.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\InsertOrder.sql</SourceFile>
+    <Line>19</Line>
+    <Column>29</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_InsertOrder) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\YourOrder\InsertOrder.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Products\SearchProductByKeyword.sql</SourceFile>
+    <Line>9</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_SearchProductByKeyword) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Products\SearchProductByKeyword.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_DeleteProduct) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Products\DeleteProduct.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_UpdateProductById) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Products\UpdateProductById.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Products\GetProductById.sql</SourceFile>
+    <Line>8</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetProductById) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Products\GetProductById.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Products\GetProducts.sql</SourceFile>
+    <Line>6</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetProducts) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Products\GetProducts.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_InsertProduct) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Products\InsertProduct.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_UpdateCartById) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\UpdateCartById.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\InsertCart.sql</SourceFile>
+    <Line>32</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\InsertCart.sql</SourceFile>
+    <Line>33</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\InsertCart.sql</SourceFile>
+    <Line>34</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from DateTime to Date.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\InsertCart.sql</SourceFile>
+    <Line>9</Line>
+    <Column>20</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from ASCII String(3) to Int.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\InsertCart.sql</SourceFile>
+    <Line>30</Line>
+    <Column>20</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from ASCII String(5) to Decimal(7, 2).</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\InsertCart.sql</SourceFile>
+    <Line>30</Line>
+    <Column>34</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_InsertCart) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\InsertCart.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\GetCartById.sql</SourceFile>
+    <Line>8</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetCartById) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\GetCartById.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\GetCart.sql</SourceFile>
+    <Line>5</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetCart) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\GetCart.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_DeleteCart) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\AddToCart\DeleteCart.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_ErrorSelectAll) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\ErrorSelectAll.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_ErrorHandling) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\ErrorHandling.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_CancelOrder) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\CancelOrder.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_UpdatePayment) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\PaymentMode\UpdatePayment.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\PaymentMode\GetPayment.sql</SourceFile>
+    <Line>5</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetPayment) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\PaymentMode\GetPayment.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_InsertPayment) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\PaymentMode\InsertPayment.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\PaymentDetail\GetPaymentDetail.sql</SourceFile>
+    <Line>5</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetPaymentDetail) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\PaymentDetail\GetPaymentDetail.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_UpdateDetail) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\ShippingDetails\UpdateDetail.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\ShippingDetails\GetDetail.sql</SourceFile>
+    <Line>5</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetDetail) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\ShippingDetails\GetDetail.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_InsertAddress) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\ShippingDetails\InsertAddress.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from Int to Decimal(7, 2).</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\TotalPrice.sql</SourceFile>
+    <Line>12</Line>
+    <Column>37</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0014</Rule>
+    <ProblemDescription>Data loss might occur when casting from Int to Decimal(7, 2).</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Cart.sql</SourceFile>
+    <Line>12</Line>
+    <Column>37</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_Cart) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\Cart.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\UserLogin\UserLogin.sql</SourceFile>
+    <Line>7</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetUser) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\UserLogin\UserLogin.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0001</Rule>
+    <ProblemDescription>The shape of the result set produced by a SELECT * statement will change if the underlying table or view structure changes.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\UserLogin\FetchUser.sql</SourceFile>
+    <Line>4</Line>
+    <Column>8</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_GetUsers) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\UserLogin\FetchUser.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+  <Problem>
+    <Rule>Microsoft.Rules.Data.SR0016</Rule>
+    <ProblemDescription>Stored procedure(SP_CustomerRegistration) includes sp_ prefix in its name.</ProblemDescription>
+    <SourceFile>C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\OnlineShoppingSite\StoreProcedure\UserRegistration\CustomerRegistration.sql</SourceFile>
+    <Line>1</Line>
+    <Column>24</Column>
+    <Severity>Warning</Severity>
+  </Problem>
+</Problems>

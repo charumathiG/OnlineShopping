@@ -105,7 +105,7 @@ namespace EcommerceDAL.RepositoryPattern
         /// <param name="commandtype">commandtype.</param>
         /// <param name="parameters">parameters.</param>
         /// <returns> values.</returns>
-            public DataSet GetData(string commandtext, CommandType commandtype, SqlParameter[] parameters = null)
+            public DataSet GetData(string commandtext, CommandType commandtype, List<SqlParameter> parameters = null)
             {
                 using (var connection = new SqlConnection(this.ConnectionString))
                 {

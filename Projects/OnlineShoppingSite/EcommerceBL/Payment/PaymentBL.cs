@@ -14,13 +14,13 @@ namespace EcommerceBL.Payment
     /// </summary>
     public class PaymentBL : IPaymentBL
     {
-        private IPaymentBL dal;
+        private IPaymentDAL dal;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PaymentBL"/> class.
         /// </summary>
         /// <param name="dal">dal.</param>
-        public PaymentBL(IPaymentBL dal)
+        public PaymentBL(IPaymentDAL dal)
         {
             this.dal = dal;
         }
@@ -31,7 +31,7 @@ namespace EcommerceBL.Payment
         /// <returns>value.</returns>
         public List<PaymentModel> GetPaymentList()
         {
-            return this.dal.GetPaymentList();
+            return this.dal.GetPayment();
         }
     }
 }
