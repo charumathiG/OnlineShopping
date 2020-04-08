@@ -15,13 +15,13 @@ namespace EcommerceBL.AddToCart
     /// </summary>
     public class AddCartBL : IAddCartBL
     {
-        private IAddCartBL dal;
+        private IAddCartDAL dal;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AddCartBL"/> class.
         /// </summary>
         /// <param name="daL">dal.</param>
-        public AddCartBL(IAddCartBL daL)
+        public AddCartBL(IAddCartDAL daL)
         {
             this.dal = daL;
         }
@@ -33,7 +33,7 @@ namespace EcommerceBL.AddToCart
         /// <returns>DAL.</returns>
         public bool DeleteCartList(AddCartModel deleteList)
         {
-            return this.dal.DeleteCartList(deleteList);
+            return this.dal.DeleteCart(deleteList);
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace EcommerceBL.AddToCart
         /// <returns>DAL.</returns>
         public List<AddCartModel> GetCartList()
         {
-            return this.dal.GetCartList();
+            return this.dal.GetCart();
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace EcommerceBL.AddToCart
         /// <returns>DAL.</returns>
         public int InsertCartList(AddCartModel view)
         {
-            return this.dal.InsertCartList(view);
+            return this.dal.InsertCart(view);
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace EcommerceBL.AddToCart
         /// <returns>DAL.</returns>
         public bool UpdateCartList(AddCartModel updateList)
         {
-            return this.dal.UpdateCartList(updateList);
+            return this.dal.UpdateCart(updateList);
         }
     }
 }

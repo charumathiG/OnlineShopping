@@ -2164,7 +2164,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "EcommerceDAL": "1.0.0"
+          "EcommerceDAL": "1.0.0",
+          "EcommerceModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/EcommerceBL.dll": {}
@@ -2177,6 +2178,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "EcommerceModels": "1.0.0",
           "Microsoft.Extensions.Configuration": "3.1.2",
           "System.Data.SqlClient": "4.8.1"
         },
@@ -2185,6 +2187,16 @@
         },
         "runtime": {
           "bin/placeholder/EcommerceDAL.dll": {}
+        }
+      },
+      "EcommerceModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/EcommerceModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcommerceModels.dll": {}
         }
       }
     }
@@ -7303,6 +7315,11 @@
       "type": "project",
       "path": "../EcommerceDAL/EcommerceDAL.csproj",
       "msbuildProject": "../EcommerceDAL/EcommerceDAL.csproj"
+    },
+    "EcommerceModels/1.0.0": {
+      "type": "project",
+      "path": "../EcommerceModels/EcommerceModels.csproj",
+      "msbuildProject": "../EcommerceModels/EcommerceModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

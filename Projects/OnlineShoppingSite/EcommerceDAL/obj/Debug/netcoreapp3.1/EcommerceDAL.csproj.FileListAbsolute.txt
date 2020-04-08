@@ -9,8 +9,11 @@ C:\Users\charumathi.gunasekar\source\repos\OnlineShoppingSite\EcommerceDAL\obj\D
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\bin\Debug\netcoreapp3.1\EcommerceDAL.deps.json
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\bin\Debug\netcoreapp3.1\EcommerceDAL.dll
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\bin\Debug\netcoreapp3.1\EcommerceDAL.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp3.1\EcommerceDAL.csprojAssemblyReference.cache
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp3.1\EcommerceDAL.AssemblyInfoInputs.cache
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp3.1\EcommerceDAL.AssemblyInfo.cs
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp3.1\EcommerceDAL.dll
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp3.1\EcommerceDAL.pdb
-C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp3.1\EcommerceDAL.csprojAssemblyReference.cache
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\bin\Debug\netcoreapp3.1\EcommerceModels.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\bin\Debug\netcoreapp3.1\EcommerceModels.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceDAL\obj\Debug\netcoreapp3.1\EcommerceDAL.csproj.CopyComplete

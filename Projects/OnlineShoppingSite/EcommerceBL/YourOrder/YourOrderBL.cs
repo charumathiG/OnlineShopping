@@ -15,13 +15,13 @@ namespace EcommerceBL.YourOrder
     /// </summary>
     public class YourOrderBL : IYourOrderBL
     {
-        private IYourOrderBL dal;
+        private IYourOrderDAL dal;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="YourOrderBL"/> class.
         /// </summary>
         /// <param name="daL">dal.</param>
-        public YourOrderBL(IYourOrderBL daL)
+        public YourOrderBL(IYourOrderDAL daL)
         {
             this.dal = daL;
         }
@@ -33,7 +33,7 @@ namespace EcommerceBL.YourOrder
         /// <returns>value.</returns>
         public bool DeleteOrderList(YourOrderModel deleteList)
         {
-            return this.dal.DeleteOrderList(deleteList);
+            return this.dal.DeleteOrder(deleteList);
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace EcommerceBL.YourOrder
         /// <returns>value.</returns>
         public List<YourOrderModel> GetOrderList()
         {
-            return this.dal.GetOrderList();
+            return this.dal.GetOrder();
         }
 
         /// <summary>
@@ -52,7 +52,7 @@ namespace EcommerceBL.YourOrder
         /// <returns>value.</returns>
         public int InsertOrderList(YourOrderModel view)
         {
-            return this.dal.InsertOrderList(view);
+            return this.dal.InsertOrder(view);
         }
 
         /// <summary>
@@ -62,7 +62,7 @@ namespace EcommerceBL.YourOrder
         /// <returns>value.</returns>
         public bool UpdateOrderList(YourOrderModel updateList)
         {
-            return this.dal.UpdateOrderList(updateList);
+            return this.dal.UpdateOrder(updateList);
         }
     }
 }

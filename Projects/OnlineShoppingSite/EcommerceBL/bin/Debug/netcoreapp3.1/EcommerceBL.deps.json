@@ -9,6 +9,7 @@
       "EcommerceBL/1.0.0": {
         "dependencies": {
           "EcommerceDAL": "1.0.0",
+          "EcommerceModels": "1.0.0",
           "StyleCop.Analyzers": "1.1.118"
         },
         "runtime": {
@@ -123,11 +124,17 @@
       "System.Security.Principal.Windows/4.7.0": {},
       "EcommerceDAL/1.0.0": {
         "dependencies": {
+          "EcommerceModels": "1.0.0",
           "Microsoft.Extensions.Configuration": "3.1.2",
           "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
           "EcommerceDAL.dll": {}
+        }
+      },
+      "EcommerceModels/1.0.0": {
+        "runtime": {
+          "EcommerceModels.dll": {}
         }
       }
     }
@@ -230,6 +237,11 @@
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
     "EcommerceDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EcommerceModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

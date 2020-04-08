@@ -6,6 +6,7 @@ namespace EcommerceAPI
     using System;
     using System.Collections.Generic;
     using System.Linq;
+    using System.Text;
     using System.Threading.Tasks;
     using EcommerceBL;
     using EcommerceBL.AddToCart;
@@ -15,6 +16,7 @@ namespace EcommerceAPI
     using EcommerceBL.PaymentMode;
     using EcommerceBL.Products;
     using EcommerceBL.ShippingAddress;
+    using EcommerceBL.UserLogin;
     using EcommerceBL.YourOrder;
     using EcommerceBL.YourOrderDetails;
     using EcommerceDAL;
@@ -28,8 +30,10 @@ namespace EcommerceAPI
     using EcommerceDAL.ProductsDAL;
     using EcommerceDAL.RepositoryPattern;
     using EcommerceDAL.ShippingAddress;
+    using EcommerceDAL.UserLogin;
     using EcommerceDAL.YourOrder;
     using EcommerceDAL.YourOrderDetails;
+    using Microsoft.AspNetCore.Authentication.JwtBearer;
     using Microsoft.AspNetCore.Builder;
     using Microsoft.AspNetCore.Hosting;
     using Microsoft.AspNetCore.HttpsPolicy;
@@ -38,8 +42,11 @@ namespace EcommerceAPI
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.Options;
+    using Microsoft.IdentityModel.Tokens;
     using Microsoft.OpenApi.Models;
     using Swashbuckle.AspNetCore.Swagger;
+    using WebApi.Helpers;
+    using WebApi.Services;
 
     /// <summary>
     /// Implementation of a class.
@@ -74,6 +81,9 @@ namespace EcommerceAPI
         /// <param name="services">value.</param>
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
+            services.AddControllers();
+
             services.AddCors(options =>
             {
                 options.AddPolicy(myAllowSpecificOrigins,
@@ -103,20 +113,51 @@ namespace EcommerceAPI
             services.AddTransient<IPaymentModeDAL, PaymentModeDAL>();
             services.AddTransient<IShippingAddressBL, ShippingAddressBL>();
             services.AddTransient<IShippingAddressDAL, ShippingAddressDAL>();
+            services.AddTransient<IUserLoginDAL, UserLoginDAL>();
+            services.AddTransient<IUserLoginBL, UserLoginBL>();
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
             });
+
+            // configure strongly typed settings objects
+            var appSettingsSection = Configuration.GetSection("AppSettings");
+            services.Configure<AppSettings>(appSettingsSection);
+
+            // configure jwt authentication
+            var appSettings = appSettingsSection.Get<AppSettings>();
+            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false,
+                };
+            });
+
+            // configure DI for application services
+            services.AddScoped<IUserService, UserService>();
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
 
-            /// <summary>
-            /// Method.
-            /// </summary>
-            /// <param name="app">app.</param>
-            /// <param name="env">env.</param>
+        /// <summary>
+        /// Method.
+        /// </summary>
+        /// <param name="app">app.</param>
+        /// <param name="env">env.</param>
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
@@ -144,7 +185,15 @@ namespace EcommerceAPI
             });
 
             app.UseRouting();
+
+            // global cors policy
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
             app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
@@ -167,3 +216,5 @@ namespace EcommerceAPI
         }
     }
 }
+    
+

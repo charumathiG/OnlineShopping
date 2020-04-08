@@ -62,7 +62,7 @@ namespace EcommerceBL.Products
         /// </summary>
         /// <param name="keyword">key.</param>
         /// <returns>value.</returns>
-        public List<ProductsListModel> Searching( string keyword)
+        public List<ProductsListModel> Searching(string keyword)
         {
             return this.dal.SearchProduct(keyword);
         }

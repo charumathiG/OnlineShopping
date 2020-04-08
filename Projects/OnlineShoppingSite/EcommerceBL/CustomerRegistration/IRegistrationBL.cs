@@ -16,7 +16,7 @@ using EcommerceDAL;
 public interface IRegistrationBL
      {
         /// <summary>
-        /// Implementation of Method. 
+        /// Implementation of Method.
         /// </summary>
         /// <param name="user">user.</param>
         /// <returns>value.</returns>

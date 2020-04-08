@@ -39,8 +39,8 @@ namespace EcommerceDAL.CustomerRegistrationDAL
             parameters.Add(this.basedal.CreateParameter("@LastName", 50, user.LastName, DbType.String));
             parameters.Add(this.basedal.CreateParameter("@FullName", 100, user.FullName, DbType.String));
             parameters.Add(this.basedal.CreateParameter("@PhoneNumber", 11, user.PhoneNumber, DbType.String));
-            parameters.Add(this.basedal.CreateParameter("@Password", 100, user.Password, DbType.String));
             parameters.Add(this.basedal.CreateParameter("@EmailId", 100, user.EmailId, DbType.String));
+            parameters.Add(this.basedal.CreateParameter("@Password", 100, user.Password, DbType.String));
             parameters.Add(this.basedal.CreateParameter("@Address", 100, user.Address, DbType.String));
 
             int last = this.basedal.Insert("SP_CustomerRegistration", CommandType.StoredProcedure, parameters.ToArray(), out int lastId);

@@ -15,13 +15,13 @@ namespace EcommerceBL.YourOrderDetails
     /// </summary>
     public class YourOrderDetailsBL : IYourOrderDetailsBL
     {
-        private IYourOrderDetailsBL dal;
+        private IYourOrderDetailsDAL dal;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="YourOrderDetailsBL"/> class.
         /// </summary>
         /// <param name="daL">dal.</param>
-        public YourOrderDetailsBL(IYourOrderDetailsBL daL)
+        public YourOrderDetailsBL(IYourOrderDetailsDAL daL)
         {
             this.dal = daL;
         }
@@ -32,7 +32,7 @@ namespace EcommerceBL.YourOrderDetails
         /// <returns>value.</returns>
         public List<YourOrderDetailModel> GetYourOrderList()
         {
-            return this.dal.GetYourOrderList();
+            return this.dal.GetOrderDetail();
         }
     }
 }

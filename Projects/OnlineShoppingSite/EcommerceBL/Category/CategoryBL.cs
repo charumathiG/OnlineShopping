@@ -15,13 +15,13 @@ namespace EcommerceBL.Category
     /// </summary>
     public class CategoryBL : ICategoryBL
     {
-        private ICategoryBL dal;
+        private ICategoryDAL dal;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="CategoryBL"/> class.
         /// </summary>
         /// <param name="daL"> dal.</param>
-        public CategoryBL(ICategoryBL daL)
+        public CategoryBL(ICategoryDAL daL)
         {
             this.dal = daL;
         }
@@ -32,7 +32,7 @@ namespace EcommerceBL.Category
         /// <returns>value.</returns>
         public List<CategoryModel> GetCategoryList()
         {
-           return this.dal.GetCategoryList();
+           return this.dal.GetCategory();
         }
     }
 }

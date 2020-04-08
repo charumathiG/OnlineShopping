@@ -171,6 +171,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "EcommerceModels": "1.0.0",
           "Microsoft.Extensions.Configuration": "3.1.2",
           "System.Data.SqlClient": "4.8.1"
         },
@@ -179,6 +180,16 @@
         },
         "runtime": {
           "bin/placeholder/EcommerceDAL.dll": {}
+        }
+      },
+      "EcommerceModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/EcommerceModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EcommerceModels.dll": {}
         }
       }
     }
@@ -571,11 +582,17 @@
       "type": "project",
       "path": "../EcommerceDAL/EcommerceDAL.csproj",
       "msbuildProject": "../EcommerceDAL/EcommerceDAL.csproj"
+    },
+    "EcommerceModels/1.0.0": {
+      "type": "project",
+      "path": "../EcommerceModels/EcommerceModels.csproj",
+      "msbuildProject": "../EcommerceModels/EcommerceModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "EcommerceDAL >= 1.0.0",
+      "EcommerceModels >= 1.0.0",
       "StyleCop.Analyzers >= 1.1.118"
     ]
   },
@@ -611,6 +628,9 @@
           "projectReferences": {
             "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj": {
               "projectPath": "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceDAL\\EcommerceDAL.csproj"
+            },
+            "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceModels\\EcommerceModels.csproj": {
+              "projectPath": "C:\\Users\\charumathi.gunasekar\\Documents\\GitHub\\OnlineShopping\\Projects\\OnlineShoppingSite\\EcommerceModels\\EcommerceModels.csproj"
             }
           }
         }

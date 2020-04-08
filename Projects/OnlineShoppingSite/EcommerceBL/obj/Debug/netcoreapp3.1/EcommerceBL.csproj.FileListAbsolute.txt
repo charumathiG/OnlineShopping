@@ -20,3 +20,5 @@ C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineSho
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.csproj.CopyComplete
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.dll
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\obj\Debug\netcoreapp3.1\EcommerceBL.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp3.1\EcommerceModels.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\EcommerceBL\bin\Debug\netcoreapp3.1\EcommerceModels.pdb

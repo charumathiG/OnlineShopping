@@ -21,18 +21,18 @@ namespace EcommerceBL.Products
         /// <returns>value.</returns>
         List<ProductsListModel> Searching(string keyword);
 
-        ///// <summary>
-        ///// Implementation of Method.
-        ///// </summary>
-        ///// <param name="view">view.</param>
-        ///// <returns>value.</returns>
-        // int InsertProducts(ProductsListModel view);
-
         /// <summary>
         /// Implementation of Method.
         /// </summary>
+        /// <param name="view">view.</param>
         /// <returns>value.</returns>
-        List<ProductsListModel> GetProductsList();
+        int InsertProducts(ProductsListModel view);
+
+        ///// <summary>
+        ///// Implementation of Method.
+        ///// </summary>
+        ///// <returns>value.</returns>
+        // List<ProductsListModel> GetProductsList();
 
         /// <summary>
         /// Implementation of Method.

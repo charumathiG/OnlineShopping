@@ -1422,7 +1422,8 @@
       },
       "EcommerceBL/1.0.0": {
         "dependencies": {
-          "EcommerceDAL": "1.0.0"
+          "EcommerceDAL": "1.0.0",
+          "EcommerceModels": "1.0.0"
         },
         "runtime": {
           "EcommerceBL.dll": {}
@@ -1430,11 +1431,17 @@
       },
       "EcommerceDAL/1.0.0": {
         "dependencies": {
+          "EcommerceModels": "1.0.0",
           "Microsoft.Extensions.Configuration": "3.1.2",
           "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
           "EcommerceDAL.dll": {}
+        }
+      },
+      "EcommerceModels/1.0.0": {
+        "runtime": {
+          "EcommerceModels.dll": {}
         }
       }
     }
@@ -2263,6 +2270,11 @@
       "sha512": ""
     },
     "EcommerceDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EcommerceModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -26,17 +26,17 @@ namespace EcommerceDAL
         /// <summary>
         /// Gets or sets implementation of property.
         /// </summary>
-        public string Password { get; set; }
-
-        /// <summary>
-        /// Gets or sets implementation of property.
-        /// </summary>
         public string PhoneNumber { get; set; }
 
         /// <summary>
         /// Gets or sets implementation of property.
         /// </summary>
         public string EmailId { get; set; }
+
+        /// <summary>
+        /// Gets or sets implementation of property.
+        /// </summary>
+        public string Password { get; set; }
 
         /// <summary>
         /// Gets or sets implementation of property.

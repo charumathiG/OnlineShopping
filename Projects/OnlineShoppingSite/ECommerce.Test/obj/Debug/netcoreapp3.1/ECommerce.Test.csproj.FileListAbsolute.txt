@@ -5,6 +5,7 @@ C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineSho
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\ECommerce.Test.runtimeconfig.json
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\ECommerce.Test.runtimeconfig.dev.json
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\ECommerce.Test.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\ECommerce.Test.pdb
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
@@ -100,6 +101,7 @@ C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineSho
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\obj\Debug\netcoreapp3.1\ECommerce.Test.AssemblyInfoInputs.cache
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\obj\Debug\netcoreapp3.1\ECommerce.Test.AssemblyInfo.cs
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\obj\Debug\netcoreapp3.1\ECommerce.Test.csproj.CopyComplete
-C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\ECommerce.Test.pdb
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\obj\Debug\netcoreapp3.1\ECommerce.Test.dll
 C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\obj\Debug\netcoreapp3.1\ECommerce.Test.pdb
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\EcommerceModels.dll
+C:\Users\charumathi.gunasekar\Documents\GitHub\OnlineShopping\Projects\OnlineShoppingSite\ECommerce.Test\bin\Debug\netcoreapp3.1\EcommerceModels.pdb

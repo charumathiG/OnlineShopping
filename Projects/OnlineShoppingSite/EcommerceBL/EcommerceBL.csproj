@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EcommerceDAL\EcommerceDAL.csproj" />
+    <ProjectReference Include="..\EcommerceModels\EcommerceModels.csproj" />
   </ItemGroup>
 
 </Project>

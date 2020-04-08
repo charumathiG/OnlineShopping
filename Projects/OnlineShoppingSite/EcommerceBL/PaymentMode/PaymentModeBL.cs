@@ -7,6 +7,7 @@ namespace EcommerceBL.PaymentMode
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using EcommerceDAL.FeedbackDAL;
     using EcommerceDAL.PaymentMode;
 
     /// <summary>
@@ -14,13 +15,13 @@ namespace EcommerceBL.PaymentMode
     /// </summary>
     public class PaymentModeBL : IPaymentModeBL
     {
-        private IPaymentModeBL dal;
+        private IPaymentModeDAL dal;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="PaymentModeBL"/> class.
         /// </summary>
         /// <param name="daL">value.</param>
-        public PaymentModeBL(IPaymentModeBL daL)
+        public PaymentModeBL(IPaymentModeDAL daL)
         {
             this.dal = daL;
         }
@@ -31,7 +32,7 @@ namespace EcommerceBL.PaymentMode
         /// <returns>value.</returns>
         public List<PaymentModeModel> GetPaymentList()
         {
-            return this.dal.GetPaymentList();
+            return this.dal.GetPaymentMode();
         }
 
         /// <summary>
@@ -41,7 +42,7 @@ namespace EcommerceBL.PaymentMode
         /// <returns>value.</returns>
         public int InsertPayModeList(PaymentModeModel view)
         {
-            return this.dal.InsertPayModeList(view);
+            return this.dal.InsertPayment(view);
         }
 
         /// <summary>
@@ -51,7 +52,7 @@ namespace EcommerceBL.PaymentMode
         /// <returns>value.</returns>
         public bool UpdatePaymentList(PaymentModeModel updateList)
         {
-            return this.dal.UpdatePaymentList(updateList);
+            return this.dal.UpdatePayment(updateList);
         }
     }
 }

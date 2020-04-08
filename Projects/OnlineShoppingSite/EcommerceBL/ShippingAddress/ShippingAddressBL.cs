@@ -16,13 +16,13 @@ namespace EcommerceBL.ShippingAddress
     /// </summary>
     public class ShippingAddressBL : IShippingAddressBL
     {
-        private IShippingAddressBL dal;
+        private IShippingAddressDAL dal;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ShippingAddressBL"/> class.
         /// </summary>
         /// <param name="daL">dal.</param>
-        public ShippingAddressBL(IShippingAddressBL daL)
+        public ShippingAddressBL(IShippingAddressDAL daL)
         {
             this.dal = daL;
         }
@@ -33,7 +33,7 @@ namespace EcommerceBL.ShippingAddress
         /// <returns>value.</returns>
         public List<ShippingAddressModel> GetDetailList()
         {
-            return this.dal.GetDetailList();
+            return this.dal.GetAddress();
         }
 
         /// <summary>
@@ -43,7 +43,7 @@ namespace EcommerceBL.ShippingAddress
         /// <returns>value.</returns>
         public int InsertDetailList(ShippingAddressModel view)
         {
-            return this.dal.InsertDetailList(view);
+            return this.dal.InsertAddress(view);
         }
 
         /// <summary>
@@ -53,7 +53,7 @@ namespace EcommerceBL.ShippingAddress
         /// <returns>value.</returns>
         public bool UpdateDetailList(ShippingAddressModel updateList)
         {
-            return this.dal.UpdateDetailList(updateList);
+            return this.dal.UpdateAddress(updateList);
         }
     }
 }
