@@ -28,11 +28,18 @@ namespace EcommerceBL.Products
         /// <returns>value.</returns>
         int InsertProducts(ProductsListModel view);
 
-        ///// <summary>
-        ///// Implementation of Method.
-        ///// </summary>
-        ///// <returns>value.</returns>
-        // List<ProductsListModel> GetProductsList();
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <returns>value.</returns>
+        List<ProductsListModel> GetProductsList();
+
+        /// <summary>
+        /// Implementation of a method.
+        /// </summary>
+        /// <param name="categoryId">categoryId.</param>
+        /// <returns>value.</returns>
+        List<ProductsListModel> GetProductById(int categoryId);
 
         /// <summary>
         /// Implementation of Method.

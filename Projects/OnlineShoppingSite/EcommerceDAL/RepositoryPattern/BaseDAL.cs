@@ -15,42 +15,42 @@ namespace EcommerceDAL.RepositoryPattern
     /// Implementation of a Class.
     /// </summary>
     public class BaseDAL : IBaseDAL
-        {
-            private SqlConnection connection;
+    {
+        private SqlConnection connection;
 
-            private IConfiguration configuration;
+        private IConfiguration configuration;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="BaseDAL"/> class.
         /// </summary>
         /// <param name="configuration">configuration.</param>
-            public BaseDAL(IConfiguration configuration)
-            {
+        public BaseDAL(IConfiguration configuration)
+        {
             this.configuration = configuration;
             this.ConnectionString = configuration.GetConnectionString("DefaultConnection");
-            }
+        }
 
         /// <summary>
         /// Gets or sets implementation of property.
         /// </summary>
-            public string ConnectionString { get; set; }
+        public string ConnectionString { get; set; }
 
         /// <summary>
         /// Implementation of Method.
         /// </summary>
-            public void CloseConnection()
-            {
-                this.CloseConnection(this.connection);
-            }
+        public void CloseConnection()
+        {
+            this.CloseConnection(this.connection);
+        }
 
         /// <summary>
         /// Implementation of Method.
         /// </summary>
         /// <param name="connection">connection.</param>
-            public void CloseConnection(SqlConnection connection)
-            {
-                connection.Close();
-            }
+        public void CloseConnection(SqlConnection connection)
+        {
+            connection.Close();
+        }
 
         /// <summary>
         /// Implementation of Method.
@@ -60,10 +60,10 @@ namespace EcommerceDAL.RepositoryPattern
         /// <param name="value">value.</param>
         /// <param name="dbType">dbType.</param>
         /// <returns>values.</returns>
-            public SqlParameter CreateParameter(string name, int size, object value, DbType dbType)
-            {
-                return this.CreateParameter(name, size, value, dbType, ParameterDirection.Input);
-            }
+        public SqlParameter CreateParameter(string name, int size, object value, DbType dbType)
+        {
+            return this.CreateParameter(name, size, value, dbType, ParameterDirection.Input);
+        }
 
         /// <summary>
         ///  Implementation of Method.
@@ -72,10 +72,10 @@ namespace EcommerceDAL.RepositoryPattern
         /// <param name="value">value.</param>
         /// <param name="dbType">dbType.</param>
         /// <returns> values.</returns>
-            public SqlParameter CreateParameter(string name, object value, DbType dbType)
-            {
-                return this.CreateParameter(name, 0, value, dbType, ParameterDirection.Input);
-            }
+        public SqlParameter CreateParameter(string name, object value, DbType dbType)
+        {
+            return this.CreateParameter(name, 0, value, dbType, ParameterDirection.Input);
+        }
 
         /// <summary>
         ///  Implementation of Method.
@@ -86,17 +86,17 @@ namespace EcommerceDAL.RepositoryPattern
         /// <param name="dbType">dbType.</param>
         /// <param name="direction">direction.</param>
         /// <returns>values.</returns>
-            public SqlParameter CreateParameter(string name, int size, object value, DbType dbType, ParameterDirection direction)
+        public SqlParameter CreateParameter(string name, int size, object value, DbType dbType, ParameterDirection direction)
+        {
+            return new SqlParameter
             {
-                return new SqlParameter
-                {
-                    DbType = dbType,
-                    ParameterName = name,
-                    Size = size,
-                    Direction = direction,
-                    Value = value,
-                };
-            }
+                DbType = dbType,
+                ParameterName = name,
+                Size = size,
+                Direction = direction,
+                Value = value,
+            };
+        }
 
         /// <summary>
         /// Implementation of Method.
@@ -105,7 +105,9 @@ namespace EcommerceDAL.RepositoryPattern
         /// <param name="commandtype">commandtype.</param>
         /// <param name="parameters">parameters.</param>
         /// <returns> values.</returns>
-            public DataSet GetData(string commandtext, CommandType commandtype, List<SqlParameter> parameters = null)
+        public DataSet GetData(string commandtext, CommandType commandtype, List<SqlParameter> parameters = null)
+        {
+            try
             {
                 using (var connection = new SqlConnection(this.ConnectionString))
                 {
@@ -128,6 +130,13 @@ namespace EcommerceDAL.RepositoryPattern
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                var s = ex.Message;
+            }
+
+            return null;
+        }
 
         /// <summary>
         /// Implementation of Method.
@@ -137,29 +146,29 @@ namespace EcommerceDAL.RepositoryPattern
         /// <param name="parameters">parameters.</param>
         /// <param name="lastId">lastId.</param>
         /// <returns>values.</returns>
-            public int Insert(string commandtext, CommandType commandType, SqlParameter[] parameters, out int lastId)
+        public int Insert(string commandtext, CommandType commandType, SqlParameter[] parameters, out int lastId)
+        {
+            lastId = 0;
+            using (var connection = new SqlConnection(this.ConnectionString))
             {
-                lastId = 0;
-                using (var connection = new SqlConnection(this.ConnectionString))
+                connection.Open();
+                using (var command = new SqlCommand(commandtext, connection))
                 {
-                    connection.Open();
-                    using (var command = new SqlCommand(commandtext, connection))
+                    command.CommandType = commandType;
+                    if (parameters != null)
                     {
-                        command.CommandType = commandType;
-                        if (parameters != null)
+                        foreach (var parameter in parameters)
                         {
-                            foreach (var parameter in parameters)
-                            {
-                                command.Parameters.Add(parameter);
-                            }
+                            command.Parameters.Add(parameter);
                         }
-
-                        lastId = command.ExecuteNonQuery();
                     }
-                }
 
-                return lastId;
+                    lastId = command.ExecuteNonQuery();
+                }
             }
+
+            return lastId;
+        }
 
         /// <summary>
         /// Implementation of Method.
@@ -169,35 +178,35 @@ namespace EcommerceDAL.RepositoryPattern
         /// <param name="parameters">parameters.</param>
         /// <param name="status">status.</param>
         /// <returns>values.</returns>
-            public bool Update(string commandtext, CommandType commandType, SqlParameter[] parameters, out bool status)
+        public bool Update(string commandtext, CommandType commandType, SqlParameter[] parameters, out bool status)
+        {
+            int result = 0;
+            status = false;
+            using (var connection = new SqlConnection(this.ConnectionString))
             {
-                int result = 0;
-                status = false;
-                using (var connection = new SqlConnection(this.ConnectionString))
+                connection.Open();
+                using (var command = new SqlCommand(commandtext, connection))
                 {
-                    connection.Open();
-                    using (var command = new SqlCommand(commandtext, connection))
+                    command.CommandType = commandType;
+                    if (parameters != null)
                     {
-                        command.CommandType = commandType;
-                        if (parameters != null)
+                        foreach (var parameter in parameters)
                         {
-                            foreach (var parameter in parameters)
-                            {
-                                command.Parameters.Add(parameter);
-                            }
+                            command.Parameters.Add(parameter);
                         }
-
-                        result = command.ExecuteNonQuery();
                     }
-                }
 
-                if (result == 1)
-                {
-                    status = true;
+                    result = command.ExecuteNonQuery();
                 }
-
-                return status;
             }
+
+            if (result == 1)
+            {
+                status = true;
+            }
+
+            return status;
+        }
 
         /// <summary>
         /// Implementation of Method.
@@ -207,34 +216,34 @@ namespace EcommerceDAL.RepositoryPattern
         /// <param name="parameters">parameters.</param>
         /// <param name="status">status.</param>
         /// <returns>values.</returns>
-            public bool Delete(string commandtext, CommandType commandType, SqlParameter[] parameters, out bool status)
+        public bool Delete(string commandtext, CommandType commandType, SqlParameter[] parameters, out bool status)
+        {
+            int result = 0;
+            status = false;
+            using (var connection = new SqlConnection(this.ConnectionString))
             {
-                int result = 0;
-                status = false;
-                using (var connection = new SqlConnection(this.ConnectionString))
+                connection.Open();
+                using (var command = new SqlCommand(commandtext, connection))
                 {
-                    connection.Open();
-                    using (var command = new SqlCommand(commandtext, connection))
+                    command.CommandType = commandType;
+                    if (parameters != null)
                     {
-                        command.CommandType = commandType;
-                        if (parameters != null)
+                        foreach (var parameter in parameters)
                         {
-                            foreach (var parameter in parameters)
-                            {
-                                command.Parameters.Add(parameter);
-                            }
+                            command.Parameters.Add(parameter);
                         }
-
-                        result = command.ExecuteNonQuery();
                     }
-                }
 
-                if (result == 1)
-                {
-                    status = true;
+                    result = command.ExecuteNonQuery();
                 }
-
-                return status;
             }
+
+            if (result == 1)
+            {
+                status = true;
+            }
+
+            return status;
         }
     }
+}

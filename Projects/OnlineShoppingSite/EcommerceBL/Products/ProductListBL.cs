@@ -38,14 +38,24 @@ namespace EcommerceBL.Products
             return this.dal.DeleteProduct(deleteList);
         }
 
-        ///// <summary>
-        ///// Implementation of Method.
-        ///// </summary>
-        ///// <returns>value.</returns>
-        // public List<ProductsListModel> GetProductsList()
-        // {
-        //    return this.dal.GetProducts();
-        // }
+        /// <summary>
+        /// Implementation of a method.
+        /// </summary>
+        /// <param name="categoryId">categoryId.</param>
+        /// <returns>values.</returns>
+        public List<ProductsListModel> GetProductById(int categoryId)
+        {
+            return this.dal.GetProductById(categoryId);
+        }
+
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <returns>value.</returns>
+        public List<ProductsListModel> GetProductsList()
+        {
+            return this.dal.GetProducts();
+        }
 
         /// <summary>
         /// Implementation of Method.

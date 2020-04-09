@@ -31,6 +31,6 @@ namespace EcommerceDAL.UserLogin
         /// </summary>
         /// <param name="user">user.</param>
         /// <returns>value.</returns>
-        int UpdateLoggedInTime(User user);
+        bool UpdateLoggedInTime(User user);
     }
 }

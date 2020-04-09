@@ -21,11 +21,18 @@ namespace EcommerceDAL.ProductsDAL
         /// <returns>value.</returns>
         List<ProductsListModel> SearchProduct(string keyword);
 
-        ///// <summary>
-        ///// Implementation of Method.
-        ///// </summary>
-        ///// <returns>value.</returns>
-        // List<ProductsListModel> GetProducts();
+        /// <summary>
+        /// Implementation of Method.
+        /// </summary>
+        /// <returns>value.</returns>
+        List<ProductsListModel> GetProducts();
+
+        /// <summary>
+        /// Implementation of a Method.
+        /// </summary>
+        /// <param name="CategoryId">categoryId.</param>
+        /// <returns>Value.</returns>
+        List<ProductsListModel> GetProductById(int CategoryId);
 
         /// <summary>
         /// Implementation of Method.

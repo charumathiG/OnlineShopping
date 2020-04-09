@@ -80,15 +80,15 @@ namespace EcommerceDAL.UserLogin
         /// </summary>
         /// <param name="user">user.</param>
         /// <returns>value.</returns>
-        public int UpdateLoggedInTime(User user)
+        public bool UpdateLoggedInTime(User user)
         {
             var parameter = new List<SqlParameter>();
             parameter.Add(this.basedal.CreateParameter("@EmailId", 50, user.EmailId, DbType.String));
             parameter.Add(this.basedal.CreateParameter("@TokenNo", 225, user.Token, DbType.String));
 
-            this.basedal.Insert("SP_UpdateUserLoggedInTime", CommandType.StoredProcedure, parameter.ToArray(), out int lastId);
+            this.basedal.Update("SP_UpdateUserLoggedInTime", CommandType.StoredProcedure, parameter.ToArray(), out bool status);
 
-            return lastId;
+            return status;
         }
     }
 }

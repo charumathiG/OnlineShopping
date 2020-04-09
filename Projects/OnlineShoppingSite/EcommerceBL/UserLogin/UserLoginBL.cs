@@ -49,7 +49,7 @@ namespace EcommerceBL.UserLogin
         /// </summary>
         /// <param name="user">user.</param>
         /// <returns>value.</returns>
-        public int UpdateLoggedInTime(User user)
+        public bool UpdateLoggedInTime(User user)
         {
             return this.dal.UpdateLoggedInTime(user);
         }

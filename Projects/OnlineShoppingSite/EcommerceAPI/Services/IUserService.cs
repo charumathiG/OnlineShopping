@@ -53,6 +53,7 @@ namespace WebApi.Services
         {
             this.appSettings = appSettings.Value;
             this.userLoginBL = _userLoginBL;
+
         }
 
         /// <summary>
@@ -87,11 +88,9 @@ namespace WebApi.Services
             };
             var token = tokenHandler.CreateToken(tokenDescriptor);
             usr.Token = tokenHandler.WriteToken(token);
-
+            this.userLoginBL.UpdateLoggedInTime(usr);
             return usr.WithoutPassword();
         }
-
-
 
         /// <summary>
         /// Implementation.

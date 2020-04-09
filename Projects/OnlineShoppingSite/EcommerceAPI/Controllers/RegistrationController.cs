@@ -39,7 +39,6 @@ namespace EcommerceAPI.Controllers
         /// <param name="user">BL.</param>
         /// <returns>DAL.</returns>
         [HttpPost]
-
         public int Insertion(RegistrationModel user)
         {
             return this.bl.Insertion(user);

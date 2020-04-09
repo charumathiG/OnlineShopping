@@ -26,7 +26,7 @@ namespace EcommerceDAL.ProductsDAL
         /// <summary>
         /// Gets or sets implementation of property.
         /// </summary>
-        public string CategoryId { get; set; }
+        public int CategoryId { get; set; }
 
         /// <summary>
         /// Gets or sets implementation of property.
