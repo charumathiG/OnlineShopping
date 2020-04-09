@@ -1,13 +1,10 @@
 ﻿CREATE PROCEDURE [dbo].[SP_GetProductById]
-(
-@ProductId varchar(5)
-)
-AS
-BEGIN
+(@CategoryId int)
+as
+begin
+select ProductId,Image,Price,ProductName
+from Products 
+where CategoryId = @CategoryId
 
-SELECT * FROM Products 
-WHERE ProductId=@ProductId
+end
 
-END
-
---Exec SP_GetProductById 'P0001'

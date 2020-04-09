@@ -19,6 +19,7 @@ create table Products(
   Quantity INT,
   Image VARCHAR(50)
 )
+select * from Products
 
 
 
